@@ -1,0 +1,10 @@
+extends ../../layout.pug 
+block scripts 
+	script(src="/js/home.js") 
+block content
+	div.home
+		div.home__header this is the  home page
+		div.home__content
+			// the is a comment about loops
+			for val in [1,2,3,4,5]
+				div.home__content__loop=val

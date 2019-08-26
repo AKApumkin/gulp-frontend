@@ -1,0 +1,32 @@
+.home{
+    position: relative;
+    max-width:90%;
+    margin:0 auto;
+    margin-top:10px;
+    &__header{
+        position: relative;
+        width:100%;
+        text-align: center;
+        font-size:50px;
+        @media screen and (max-width: 800px) {
+            font-size:30px;
+        }
+    }
+    &__content{
+        width:100%;
+        display: inline-block;
+        font-size:40px;
+        &__loop{
+            width:calc(50% - 20px);
+            margin:10px;
+            text-align: center;
+            height:60px;
+            line-height:60px;
+            background-color:#08559c;
+            color:#fff;
+            @include border-radius(10px);
+            float:left;
+        }
+    }
+    
+}

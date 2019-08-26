@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'universnextforhsbcw01-rg';
+    src: url('./../assets/fonts/.eot');
+    src: url('./../assets/fonts/.woff') format('woff'),
+    url('./../assets/fonts/.ttf') format('truetype'),
+    url('./../assets/fonts/.svg#universnextforhsbcw01-rg') format('svg'),
+    url('./../assets/fonts/.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+}
+
+$lightFontFamily: sans-serif, 'PingFang TC', 'Microsoft JhengHei', 'Lantinghei TC', 'Heiti TC';
+.f-header {
+    font-family: $lightFontFamily;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 100;
+    @media (max-width:  500px) {
+        font-size: 32px;
+    }
+}

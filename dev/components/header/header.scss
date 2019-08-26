@@ -1,0 +1,15 @@
+.header{
+    position: relative;
+    height:50px;
+    display: inline-block;
+    &__menu{
+        position: relative;  
+        max-width: 1200px;
+        margin: 0 auto;
+        &__item{
+            padding:20px;
+            font-size:20px;
+            float: left;
+        }
+    }
+}
