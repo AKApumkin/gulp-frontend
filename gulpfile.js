@@ -146,7 +146,7 @@ function clean_temp_item() {
 
 // cleans the dist folder to avoid duplicates 
 function clean_dist_folder() {
-    return src('dist', {read: false})
+    return src('dist', {read: false, allowEmpty: true})
     .pipe(clean());
 }
 
