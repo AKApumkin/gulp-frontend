@@ -18,7 +18,8 @@ const newfile      = require('gulp-file');
 const replace      = require('gulp-replace');
 const connect      = require('gulp-connect');
 const clean        = require('gulp-clean');
-const gfi           = require("gulp-file-insert");
+const gfi          = require("gulp-file-insert");
+const uglify       = require('gulp-uglify');
 
 // updates the cache buster for live reload
 let cache_buster;
@@ -122,6 +123,7 @@ function concat_libraries() {
     return src('js-temp/*.js')
         .pipe(rename({dirname: ''}))
         .pipe(concat('libraries.js'))
+        .pipe(uglify())
         .pipe(dest('dist/js'))
         .pipe(connect.reload())
 }
