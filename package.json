@@ -24,6 +24,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-strip-comments": "^2.5.2",
     "gulp-typescript": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
     "postcss-pxtorem": "^4.0.1",
     "pxtorem": "^1.0.0",
